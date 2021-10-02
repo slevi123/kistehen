@@ -1,0 +1,55 @@
+#index-page{
+    margin: 0;
+    padding: 0;
+}
+
+.description{
+    width: 100%;
+    height: max-content;
+    background: gray;
+    padding: 10em 1.5em;
+    box-sizing: border-box;
+}
+
+.desc-text h1{
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    margin-top: 0;
+    font-size: 2.2em;
+    margin-bottom: 2.5em;
+}
+
+.desc-text h2{
+    font-family: FreeMono, monospace;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1.5em;
+    letter-spacing: 0.2ch;
+}
+
+.desc-text{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.section-wrapper{
+    box-sizing: border-box;
+    display: flex;
+    width: 100%;
+}
+
+.jobgiver,.jobsearcher{
+    width: 50%;
+    text-align: center;
+    background-color: darkslategrey ;
+}
+
+@media only screen and (max-width: 700px) {
+    .section-wrapper{
+        display: block;
+    }
+    .jobgiver, .jobsearcher{
+        width: 100%;
+    }
+  }
+
