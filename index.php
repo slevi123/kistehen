@@ -30,7 +30,7 @@
                 <a href="">Take me there!</a>
             </div>
             <div class="jobsearcher">
-                <h2>For freelancers</h2>
+                <h2>For freelancers...</h2>
                 <a href="">Take me there!</a>
             </div>
         </div>
