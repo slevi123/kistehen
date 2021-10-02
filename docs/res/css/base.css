@@ -1,0 +1,4 @@
+body{
+    background: red(0, 0, 0);
+    background-image: url("../../res/png/subtle_patterns/sativa/sativa/sativa_modified.png")
+}

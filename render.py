@@ -1,5 +1,6 @@
 from pathlib import Path
 from jinja2 import Environment, FileSystemLoader, select_autoescape
+from sample_data.parties import parties
 
 def render():
     # pure_path = Path.cwd() / "sites"
@@ -25,6 +26,9 @@ def render():
         (Path(f"./docs")/file_name).write_text(site, encoding='utf-8')    # sites
 
     process("index.html")
+
+    process("parties.html", context={"parties": parties})
+    process("res/css/base.css", template_path="css/base.css", )
 
 if __name__ == "__main__":
     render()

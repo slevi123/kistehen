@@ -1,0 +1,28 @@
+{% extends "_base.html" %}
+
+{% block imports %} 
+    <link rel="stylesheet" href="{{pure_path}}/res/css/parties.css">
+{% endblock imports %} 
+
+
+{% block content %} 
+
+    <div id="parties">
+        <h1>My Parties</h1>
+        <h2>Upcoming parties</h2>
+        {% for party in parties %}
+            <article class="party-details">
+                <p>{{party.name}}</p>
+                <p>{{party.where}}</p>
+                
+                <p>{{party.start_date}}</p>
+                <p>{{party.duration}}</p>
+                
+            </article>
+        {% endfor %}
+        <button>new party</button>
+    </div>
+
+
+
+{% endblock content %}
