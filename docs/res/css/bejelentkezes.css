@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(126, 26, 26);
+  background-image: url(https://d1mkprg9bp64fp.cloudfront.net/wp-content/blogs.dir/4/files/2013/04/smock-biel-pattern.png);
+}
+
+.form-box{
+  transform: translateX(-50%);
+      width: 380px;
+      height: 480px;
+      position: relative;
+      top: 100px;
+      margin-left:50%;
+      background-color: rgb(0, 0, 0, 80%);
+      padding: 5px;
+      overflow: hidden;
+      border-radius: 20px;
+      -webkit-transition:all linear 0.5s;
+      transition: all linear 0.5s;
+}
+.form-box.ng-hide{
+  opacity: 0;
+}
+
+.gomb-box{
+       width: 250px;
+       margin: 35px auto;
+       position: relative;
+      box-shadow: 0px 0px 20px 0px  rgb(235, 42, 42);
+       border-radius: 20px;
+       display: flex;
+}
+
+.gomb-be{
+  padding: 15px 20px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+  color: white;
+  width: 50%;
+}
+#be{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 125px;
+    height: 100%;
+    background: linear-gradient(to right, rgb(192,27,27), rgb(0, 0, 0));
+    border-radius: 20px;
+    transition: .5s;
+}
+
+.bemenet-csoport{
+    top: 130px;
+    position: absolute;
+    width: 280px;
+    margin-left: 14%;
+    transition: .5s;
+}
+
+.bemenet-mezo{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 0;
+    border-bottom: 2px solid rgb(126, 26, 26);
+    border-radius: 20px;
+    text-align: center;
+    outline: none;
+    background: transparent;
+    color: white;
+}
+
+.megerosito-gomb{
+     width: 85%;
+    padding: 12px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    outline: none;
+    background: linear-gradient(to right, rgb(144, 5, 5), rgb(0, 0, 0));
+    border: 0;
+    color: white;
+  }
+
+  .elenorzes{
+    margin: 30px 10px 30px 0;
+  }
+
+span{
+    color: white;
+    font-size: 15px;
+    bottom: 78px;
+    position: absolute;
+}
+
+#login{
+    left: 5px;
+}
+
+#register{
+    left: 400px;
+}
+
+.valassz{
+  text-transform: capitalize;
+  display: inline-block;
+  color: white;
+}
+
+::-webkit-input-placeholder{
+  color: white;
+}
