@@ -2,6 +2,12 @@ body{
     background: rgb(25, 23, 27);
     font-family: 'Yaldevi', sans-serif;
     color: wheat;
+
+    background-image: url('../png/people_back.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-o: ; */
 }
 
 a{
@@ -23,6 +29,10 @@ button:active{
 
 r{
     color: rgb(175, 14, 14);
+}
+
+b{
+    color: blue;
 }
 
 .logo{
@@ -71,4 +81,14 @@ r{
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+#conditions{
+    background: rgb(248, 236, 214);
+    color: black;
+    width: 100%;    
+    position: absolute;
+    top:auto;
+    left: auto;
+    padding: 5px;
 }

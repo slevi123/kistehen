@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="./res/css/base.css">
 
+        <script src="./res/js/conditions.js"></script>
         
     <link rel="stylesheet" href="./res/css/index.css">
     <script src="./res/js/index.js"></script>
@@ -36,7 +37,7 @@
         <div id="login" class="flex form">
             <label for="l-email">email: <input type="text" id="l-email"></label>
             
-            <label for="l-password">password: <input type="text" id="l-password"></label>
+            <label for="l-password">password: <input type="password" id="l-password"></label>
             
             <button onclick="location.href = './home.html'">login</button>
         </div>
@@ -46,13 +47,18 @@
             
             <label for="s-email">email:  <input type="text" id="s-email"></label>
            
-            <label for="s-password">password: <input type="text" id="s-password"></label>
+            <label for="s-password">password: <input type="password" id="s-password"></label>
             
-            <label for="s-repeat-password">repeat password: <input type="text" id="s-repeat-password"></label>
+            <label for="s-repeat-password">repeat password: <input type="password" id="s-repeat-password"></label>
             
             <button onclick="alert('successfull registration!'); location.href = './home.html'">register</button>
         </div>
     </section>
 
+
+        <div id="conditions" class="flex">
+            <p>Please accept our <b>licence agreement</b> and <b>terms of use</b>!</p>
+            <button>Accept</button>
+        </div>
     </body>
 </html>

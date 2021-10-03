@@ -30,8 +30,9 @@ def render():
     process("parties.html", context={"parties": parties})
 
     process("home.html")
-    process("search.html")
+    process("search_parties.html", context={"parties": parties})
     process("partydescription.html")
+    process("new_party.html")
 
 if __name__ == "__main__":
     render()

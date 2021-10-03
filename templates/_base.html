@@ -14,6 +14,7 @@
 
         <link rel="stylesheet" href="{{pure_path}}/res/css/base.css">
 
+        <script src="{{pure_path}}/res/js/conditions.js"></script>
         {% block imports %}
         {% endblock imports %}
     </head>
@@ -23,5 +24,10 @@
         {% block content %}
             <p>content</p>
         {% endblock content %}
+
+        <div id="conditions" class="flex">
+            <p>Please accept our <b>licence agreement</b> and <b>terms of use</b>!</p>
+            <button>Accept</button>
+        </div>
     </body>
 </html>

@@ -1,0 +1,23 @@
+{% extends "_base.html" %}
+
+{% block imports %}
+    <link rel="stylesheet" href="{{pure_path}}/res/css/new_party.css">
+{% endblock imports %}
+
+{% block content %} 
+    <div class="flex attributes">
+        <h1>Create your new party</h1>
+        <label for="name">name: <input type="text" id="name"></label>
+        <label for="privat">privat: <input type="checkbox" id="privat"></label>
+        <label for="start">start: <input type="date" id="start"></label>
+        <label for="ends">ends: <input type="date" id="ends"></label>
+        <label for="location">location: <input type="text" id="location"></label>
+        <label for="location_pictures">location pictures: <button id="location_pictures">upload</button></label>
+        <label for="add_supplies">add suppliments needed: <input type="text" id="add_supplies"></label>
+        <label for="add_services">add services needed: <input type="text" id="add_services"></label>
+
+        <button href="{{pure_path}}/home.html" onclick="alert('Party successfully created!')">submit</button>
+        
+    </div>
+
+{% endblock content %}

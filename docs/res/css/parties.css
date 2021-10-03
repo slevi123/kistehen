@@ -1,19 +1,22 @@
 
 .party-details{
+    font-size: 0.9em;
     background: rgba(30, 29, 37, 0.788);
     color: white;
     /* border: 1px solid rgb(245, 141, 141);  */
     padding: 10px;
     margin: 4px;
-    font-size: 1.5em;
+    /* font-size: 1.5em; */
     border-radius: 5px;
     min-width: 50vw;
-    height: 100px;
+    width: fit-content;
+    /* height: 100px; */
     text-align: center;
     box-shadow: 0.5px 2px rgb(56, 50, 50);
     letter-spacing: 2px;
 
     display: grid;
+    grid-template-columns: 250px 100px 20px;
 }
 
 #new_party{
@@ -31,3 +34,9 @@
     align-items: center;
 }
 
+#invite-code{
+    background: whitesmoke;
+    border-radius: 10px;
+    padding: 9px;
+    font-size: 0.9em;
+}

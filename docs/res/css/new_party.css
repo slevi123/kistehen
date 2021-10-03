@@ -1,0 +1,6 @@
+.attributes label, input{
+    margin: 5px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    border: 0;
+}
