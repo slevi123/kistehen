@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        
+        <title>{% block title %}Hype&Vibe{% endblock title %}</title>
+        <link rel="icon" type="image/x-icon" href="{{pure_path}}/res/png/favicon.png?v=6" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{{pure_path}}/res/css/base.css">
+
+        <script src="{{pure_path}}/res/js/conditions.js"></script>
+        {% block imports %}
+        {% endblock imports %}
+    </head>
+
+    <body>
+        <h1 class="logo unselectable"><a href="{{pure_path}}/index.html"><r>Hype</r>&<r>Vibe</r></a></h1>
+        {% block content %}
+            <p>content</p>
+        {% endblock content %}
+
+        <div id="conditions" class="flex">
+            <p>Please accept our <b>licence agreement</b> and <b>terms of use</b>!</p>
+            <button>Accept</button>
+        </div>
+    </body>
+</html>

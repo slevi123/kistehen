@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        
+        <title>Hype&Vibe</title>
+        <link rel="icon" type="image/x-icon" href="./res/png/favicon.png?v=6" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./res/css/base.css">
+
+        <script src="./res/js/conditions.js"></script>
+        
+    <link rel="stylesheet" href="./res/css/new_party.css">
+
+    </head>
+
+    <body>
+        <h1 class="logo unselectable"><a href="./index.html"><r>Hype</r>&<r>Vibe</r></a></h1>
+         
+    <div class="flex attributes">
+        <h1>Create your new party</h1>
+        <label for="name">name: <input type="text" id="name"></label>
+        <label for="privat">privat: <input type="checkbox" id="privat"></label>
+        <label for="start">start: <input type="date" id="start"></label>
+        <label for="ends">ends: <input type="date" id="ends"></label>
+        <label for="location">location: <input type="text" id="location"></label>
+        <label for="location_pictures">location pictures: <button id="location_pictures">upload</button></label>
+        <label for="add_supplies">add suppliments needed: <input type="text" id="add_supplies"></label>
+        <label for="add_services">add services needed: <input type="text" id="add_services"></label>
+
+        <button href="./home.html" onclick="alert('Party successfully created!'); location.href = './home.html'">submit</button>
+        
+    </div>
+
+
+
+        <div id="conditions" class="flex">
+            <p>Please accept our <b>licence agreement</b> and <b>terms of use</b>!</p>
+            <button>Accept</button>
+        </div>
+    </body>
+</html>

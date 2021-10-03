@@ -1,0 +1,33 @@
+.container-wrapper{
+    display: flex;
+}
+
+.text-wrapper p {
+    color: white;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.join-btn a{
+    outline: none;
+    color: white;
+    text-decoration: none;
+    background-color: rgb(126, 26, 26);
+    padding: 15px 70px;
+    border: 4px solid black;
+    border-radius: 5%;
+}
+
+.join-btn{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15%;
+}
+
+.segment{
+    width: 33.5%;
+}

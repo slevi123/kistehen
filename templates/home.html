@@ -1,0 +1,26 @@
+{% extends "_base.html" %}
+
+{% block imports %}
+    <link rel="stylesheet" href="{{pure_path}}/res/css/profile.css">
+{% endblock imports %}
+
+{% block content %} 
+     <div class="profile flex"> 
+        <img src="res/png/profile.jpg" width="150" height="150">
+        <p>Veres Veronika</p>
+     </div>
+    <div class="button-wrapper"> 
+        <div class="btn1 btn"> 
+            <a href = "{{pure_path}}/search_parties.html"> Join a party </a>
+        </div>
+        <div class="btn2 btn"> 
+            <a href = "{{pure_path}}/parties.html"> My parties </a> 
+        </div>
+    </div>
+
+
+      
+
+
+
+{% endblock content %}

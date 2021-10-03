@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        
+        <title>Hype&Vibe</title>
+        <link rel="icon" type="image/x-icon" href="./res/png/favicon.png?v=6" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Yaldevi:wght@200&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="./res/css/base.css">
+
+        <script src="./res/js/conditions.js"></script>
+        
+    <link rel="stylesheet" href="./res/css/index.css">
+    <script src="./res/js/index.js"></script>
+
+    </head>
+
+    <body>
+        <h1 class="logo unselectable"><a href="./index.html"><r>Hype</r>&<r>Vibe</r></a></h1>
+        
+    <section class="flex">
+        <div class="switch-toggle" id="switch">
+            <input id="login-option" name="state-d" type="radio" checked="checked"/>
+            <label for="login-option" onclick="select_login()">login</label>
+            
+            <input id="signup-option" name="state-d" type="radio"/>
+            <label for="signup-option" onclick="select_signup()">sign up</label>
+            
+        </div>
+
+        <div id="login" class="flex form">
+            <label for="l-email">email: <input type="text" id="l-email"></label>
+            
+            <label for="l-password">password: <input type="password" id="l-password"></label>
+            
+            <button onclick="location.href = './home.html'">login</button>
+        </div>
+        
+        <div id="signup" class="flex form" style="display: none;">
+            <label for="s-username">username: <input type="text" id="s-username"></label>
+            
+            <label for="s-email">email:  <input type="text" id="s-email"></label>
+           
+            <label for="s-password">password: <input type="password" id="s-password"></label>
+            
+            <label for="s-repeat-password">repeat password: <input type="password" id="s-repeat-password"></label>
+            
+            <button onclick="alert('successfull registration!'); location.href = './home.html'">register</button>
+        </div>
+    </section>
+
+
+        <div id="conditions" class="flex">
+            <p>Please accept our <b>licence agreement</b> and <b>terms of use</b>!</p>
+            <button>Accept</button>
+        </div>
+    </body>
+</html>

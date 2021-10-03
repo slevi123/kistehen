@@ -1,0 +1,34 @@
+{% extends "_base.html" %}
+
+{% block imports %}
+    <link rel="stylesheet" href="{{pure_path}}/res/css/parties.css">
+{% endblock imports %}
+
+{% block content %} 
+    <div id="parties">
+        <h1>Join a party</h1>
+        <button id="invite-code" style="transform: translate(200px)">use invite code</button>
+        <h3 style="transform: translate(-300px)">Nearby:</h3>
+        {% for party in parties %}
+            <article class="party-details">
+                <h3 style="grid-column: 1/2; grid-row: 1">{{party.name}}</h3>
+                <!-- <p>{{party.where}}</p> -->
+
+                <p style="grid-column: 1; grid-row: 2">{{party.start_date}}</p>
+                <p style="grid-column: 2; grid-row: 2">{{party.duration}}</p>
+                <p style="grid-column: 1; grid-row: 3">{{party.location}}</p>
+                <p style="grid-column: 4; grid-row: 3">{{party.private}}</p>
+
+                <div  style="grid-column: 4; grid-row: 1/2" class="iconset">
+                    {% for icon in party.icons %}
+                        <img src="{{pure_path}}/res/png/favicon.png" width="22" height="22">
+                    {% endfor %}
+                </div>
+
+            </article>
+        {% endfor %}
+      
+    </div>
+
+
+{% endblock content %}

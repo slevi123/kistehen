@@ -1,0 +1,39 @@
+{% extends "_base.html" %}
+
+{% block imports %}
+    <link rel="stylesheet" href="{{pure_path}}/res/css/index.css">
+    <script src="{{pure_path}}/res/js/index.js"></script>
+{% endblock imports %}
+
+{% block content %}
+    <section class="flex">
+        <div class="switch-toggle" id="switch">
+            <input id="login-option" name="state-d" type="radio" checked="checked"/>
+            <label for="login-option" onclick="select_login()">login</label>
+            
+            <input id="signup-option" name="state-d" type="radio"/>
+            <label for="signup-option" onclick="select_signup()">sign up</label>
+            
+        </div>
+
+        <div id="login" class="flex form">
+            <label for="l-email">email: <input type="text" id="l-email"></label>
+            
+            <label for="l-password">password: <input type="password" id="l-password"></label>
+            
+            <button onclick="location.href = '{{pure_path}}/home.html'">login</button>
+        </div>
+        
+        <div id="signup" class="flex form" style="display: none;">
+            <label for="s-username">username: <input type="text" id="s-username"></label>
+            
+            <label for="s-email">email:  <input type="text" id="s-email"></label>
+           
+            <label for="s-password">password: <input type="password" id="s-password"></label>
+            
+            <label for="s-repeat-password">repeat password: <input type="password" id="s-repeat-password"></label>
+            
+            <button onclick="alert('successfull registration!'); location.href = '{{pure_path}}/home.html'">register</button>
+        </div>
+    </section>
+{% endblock content %}
