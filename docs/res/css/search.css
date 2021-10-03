@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(25, 23, 27);
+}
+
+.cimsor{
+    font-size: 4em;
+    font-weight: bold;
+    color: white;
+    font-family:  Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.search-container{
+    float: right;
+    padding-right: 20%;
+    margin-bottom: 50px;
+  }
+
+.search-container input[type=text] {
+    padding: 10px;
+    padding-right: 50px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+  }
+
+  .search-container input[type=text]:focus{
+      outline: none;
+  }
+
+
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr{
+      background-color: rgb(100, 10, 10);
+      color: white;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+    color: black;
+  }
+
+.tabla p{
+    color: white;
+    font-size: 2.5em;
+    margin-top: 150px;
+    margin-left: 22.5%;
+    font-family:  Arial, Helvetica, sans-serif;
+}
+
+  

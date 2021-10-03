@@ -28,7 +28,9 @@ def render():
     process("index.html")
 
     process("parties.html", context={"parties": parties})
-    # process("res/css/base.css", template_path="css/base.css", )
+
+    process("home.html")
+    process("search.html")
 
 if __name__ == "__main__":
     render()
