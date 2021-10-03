@@ -31,24 +31,3 @@
     align-items: center;
 }
 
-/* 3way toggle switch */
-.switch-toggle {
-    float: left;
-    background: #242729;
-    border-radius: 5px;
-    margin-bottom: 8px;
- }
- .switch-toggle input {
-   position: absolute;
-   opacity: 0;
- }
- .switch-toggle input + label {
-   padding: 7px;
-   float:left;
-   color: #fff;
-   cursor: pointer;
- }
- .switch-toggle input:checked + label {
-   background: green;
-   border-radius: 5px;
- }

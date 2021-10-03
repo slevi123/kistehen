@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 
-body{
+/* body{
   background-color: rgb(126, 26, 26);
   background-image: url(https://d1mkprg9bp64fp.cloudfront.net/wp-content/blogs.dir/4/files/2013/04/smock-biel-pattern.png);
-}
+} */
 
 .form-box{
   transform: translateX(-50%);
@@ -52,7 +52,7 @@ body{
     height: 100%;
     background: linear-gradient(to right, rgb(192,27,27), rgb(0, 0, 0));
     border-radius: 20px;
-    transition: .5s;
+    /* transition: .5s; */
 }
 
 .bemenet-csoport{
@@ -60,7 +60,7 @@ body{
     position: absolute;
     width: 280px;
     margin-left: 14%;
-    transition: .5s;
+    /* transition: .5s; */
 }
 
 .bemenet-mezo{
@@ -79,7 +79,7 @@ body{
 }
 
 .megerosito-gomb{
-     width: 85%;
+    width: 85%;
     padding: 12px 30px;
     cursor: pointer;
     display: block;
@@ -112,11 +112,19 @@ span{
 }
 
 .valassz{
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   display: inline-block;
   color: white;
 }
 
 ::-webkit-input-placeholder{
   color: white;
+}
+
+#regiszterek{
+    visibility: hidden;
+}
+
+#register-2{
+  visibility: hidden;
 }

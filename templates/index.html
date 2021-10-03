@@ -1,57 +1,39 @@
 {% extends "_base.html" %}
 
 {% block imports %}
-    <link rel="stylesheet" href="{{pure_path}}/res/css/bejelentkezes.css">
+    <link rel="stylesheet" href="{{pure_path}}/res/css/index.css">
+    <script src="{{pure_path}}/res/js/index.js"></script>
 {% endblock imports %}
 
-{% block content %} 
-     <div class="proba-alap" >
-            <div class="form-box" ng-hide="elkuld">
-                <div class="gomb-box">
-                    <div id="be"></div>
-                    <button type="button" class="gomb-be" onclick="login()">Log In</button> 
-                    <button type="button" class="gomb-be" onclick="register()">Register</button>
-                </div>
-                <form id="login" class="bemenet-csoport" action="login_code.php" method="POST">
-                <input type="email" class="bemenet-mezo" name="email" id="email" placeholder="Email Adress" required>    
-                <input type="password" class="bemenet-mezo" name="password" id="password" placeholder="Password" required>
-                <button type="submit" class="megerosito-gomb" style="margin-top: 100px">Log In</button>
-                </form>
-                
-                <form  id="register-1" class="bemenet-csoport" action="registration_code.php" method="POST">
-                    <input type="text" class="bemenet-mezo" name="fullname" id="fullname" placeholder="Full Name" required>
-                    <input type="email" class="bemenet-mezo" name="username" id="username" placeholder="Username" required>
-                    <input type="password" class="bemenet-mezo" name="password" id="password" placeholder="Password" required>
-                    <input type="password" class="bemenet-mezo" name="rpassword" id="rpassword" placeholder="Repeat Password" required>
-                    <button type="submit" class="megerosito-gomb">Next</button>
-                 </form>
+{% block content %}
+    <section class="flex">
+        <div class="switch-toggle" id="switch">
+            <input id="login-option" name="state-d" type="radio" checked="checked"/>
+            <label for="login-option" onclick="select_login()">login</label>
+            
+            <input id="signup-option" name="state-d" type="radio"/>
+            <label for="signup-option" onclick="select_signup()">sign up</label>
+            
+        </div>
 
-                 <form  id="register-2" class="bemenet-csoport" action="registration_code.php" method="POST">
-                    <input type="text" class="bemenet-mezo cnp" name="cnp" id="cnp" placeholder="CNP" required>
-                    <button type="submit" class="megerosito-gomb">Register</button>
-                 </form>
-            </div>
-    </div>
-
-      <script>
-            var x = document.getElementById("login");
-            var y = document.getElementById("register");
-            var z = document.getElementById("be");
-
-
-            function register(){
-                x.style.left="-450px";
-                y.style.left="5px";
-                z.style.left="130px";
-            }
-
-            function login(){
-                x.style.left="5px";
-                y.style.left="450px";
-                z.style.left="0px";
-            }
-     </script>
-
-
-
+        <div id="login" class="flex form">
+            <label for="l-email">email: <input type="text" id="l-email"></label>
+            
+            <label for="l-password">password: <input type="text" id="l-password"></label>
+            
+            <button onclick="location.href = '{{pure_path}}/home.html'">login</button>
+        </div>
+        
+        <div id="signup" class="flex form" style="display: none;">
+            <label for="s-username">username: <input type="text" id="s-username"></label>
+            
+            <label for="s-email">email:  <input type="text" id="s-email"></label>
+           
+            <label for="s-password">password: <input type="text" id="s-password"></label>
+            
+            <label for="s-repeat-password">repeat password: <input type="text" id="s-repeat-password"></label>
+            
+            <button onclick="alert('successfull registration!'); location.href = '{{pure_path}}/home.html'">register</button>
+        </div>
+    </section>
 {% endblock content %}
