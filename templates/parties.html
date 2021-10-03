@@ -8,19 +8,40 @@
 {% block content %} 
 
     <div id="parties">
-        <h1>My Parties</h1>
-        <h2>Upcoming parties</h2>
+        <h1 class="title">My Parties</h1>
+
+        <div class="switch-toggle">
+            <input id="past" name="state-d" type="radio" />
+            <label for="past" onclick="">past</label>
+
+            <input id="ongoing" name="state-d" type="radio" checked="" />
+            <label for="ongoing" onclick="">ongoing</label>
+          
+            <input id="upcoming" name="state-d" type="radio" checked="checked" />
+            <label for="upcoming" class="disabled" onclick="">upcoming</label>
+          
+          
+        </div>
+
         {% for party in parties %}
             <article class="party-details">
-                <p>{{party.name}}</p>
+                <h3>{{party.name}}</h3>
                 <p>{{party.where}}</p>
-                
+
                 <p>{{party.start_date}}</p>
                 <p>{{party.duration}}</p>
+                <p>{{party.location}}</p>
+
+                <div class="iconset">
+                    {% for icon in party.icons %}
+    
+                    {% endfor %}
+                </div>
+
                 
             </article>
         {% endfor %}
-        <button>new party</button>
+        <button id="new_party">new party</button>
     </div>
 
 

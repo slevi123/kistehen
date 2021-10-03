@@ -10,31 +10,82 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Lobster&family=Raleway:wght@100;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bowlby+One+SC&family=Yaldevi:wght@200&display=swap" rel="stylesheet">
 
         <link rel="stylesheet" href="./res/css/base.css">
 
-        <script src=""></script>
          
     <link rel="stylesheet" href="./res/css/parties.css">
 
     </head>
 
     <body>
-        <h1 class="logo unselectable"><a href="./index.html">Hype&Vibe</a></h1>
+        <h1 class="logo unselectable"><a href="./index.html"><r>Hype</r>&<r>Vibe</r></a></h1>
          
 
     <div id="parties">
-        <h1>My Parties</h1>
-        <h2>Upcoming parties</h2>
+        <h1 class="title">My Parties</h1>
+
+        <div class="switch-toggle">
+            <input id="past" name="state-d" type="radio" />
+            <label for="past" onclick="">past</label>
+
+            <input id="ongoing" name="state-d" type="radio" checked="" />
+            <label for="ongoing" onclick="">ongoing</label>
+          
+            <input id="upcoming" name="state-d" type="radio" checked="checked" />
+            <label for="upcoming" class="disabled" onclick="">upcoming</label>
+          
+          
+        </div>
+
         
-            <article class="party-details">My Birthday</article>
+            <article class="party-details">
+                <h3>My Birthday</h3>
+                <p></p>
+
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <div class="iconset">
+                    
+                </div>
+
+                
+            </article>
         
-            <article class="party-details">House Warming</article>
+            <article class="party-details">
+                <h3>House Warming</h3>
+                <p></p>
+
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <div class="iconset">
+                    
+                </div>
+
+                
+            </article>
         
-            <article class="party-details">Come on barbie, let`s go party!</article>
+            <article class="party-details">
+                <h3>Come on barbie, let`s go party!</h3>
+                <p></p>
+
+                <p></p>
+                <p></p>
+                <p></p>
+
+                <div class="iconset">
+                    
+                </div>
+
+                
+            </article>
         
-        <button>new party</button>
+        <button id="new_party">new party</button>
     </div>
 
 

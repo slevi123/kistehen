@@ -1,4 +1,46 @@
 body{
-    background: red(0, 0, 0);
-    background-image: url("../../res/png/subtle_patterns/sativa/sativa/sativa_modified.png")
+    background: rgb(25, 23, 27);
+    font-family: 'Yaldevi', sans-serif;
+    color: wheat;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    font-size: 1.6em;
+    padding: 3px;
+    border-radius: 25px;
+    outline: none;
+    border: 0;
+    background:rgb(235, 77, 77)
+}
+
+button:active{
+    background:rgb(248, 118, 118)
+}
+
+r{
+    color: rgb(175, 14, 14);
+}
+
+.logo{
+    font-family: 'Bowlby One SC', cursive;
+    letter-spacing: 3.5px;
+    color: antiquewhite;
+}
+
+.title{
+    font-family: 'Bebas Neue', cursive;
+    letter-spacing: 2px;
+}
+
+.unselectable{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
