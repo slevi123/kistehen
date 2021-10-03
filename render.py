@@ -31,6 +31,7 @@ def render():
 
     process("home.html")
     process("search.html")
+    process("partydescription.html")
 
 if __name__ == "__main__":
     render()
