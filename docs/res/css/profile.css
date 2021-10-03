@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(25, 23, 27);
+}
+
+.profile-pic img{
+    border-radius: 50%;
+}
+
+.profile-pic{
+    width: max-content;
+    height: max-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.profile-pic p{
+    text-align: center;
+    font-weight: bold;
+    font-size: 2.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
+.button-wrapper{
+    width: 100%;
+    display: flex;
+}
+
+.btn{
+    width: 50%;
+    text-align: center;
+    margin-top: 75px;
+}
+
+.btn a{
+    text-decoration: none;
+    border: 3.5px solid black;
+    font-size: 2em;
+    padding: 7.5px;
+    background-color: rgb(126, 26, 26);
+    color: white;
+    border-radius: 10px;
+    font-family:  Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,46 @@
+{% extends "_base.html" %}
+
+{% block imports %}
+    <link rel="stylesheet" href="{{pure_path}}/res/css/search.css">
+{% endblock imports %}
+
+{% block content %} 
+
+        <p class = "cimsor">Join a party</p>
+        <div class="search-container">
+        <form>
+            <input type="text" placeholder="Use code" name="search">
+        </form>
+        </div>
+        <div class="tabla">
+        <p>Nearby:</p>
+            <table>
+                <tr>
+                    <th>Frigyes Tihamér</th>
+                </tr>
+                <tr>
+                    <td>Alfreds Futterkiste</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                </tr>
+                <tr>
+                    <td>Ernst Handel</td>
+                </tr>
+                <tr>
+                    <td>Island Trading</td>
+                </tr>
+                <tr>
+                    <td>Laughing Bacchus Winecellars</td>
+                </tr>
+                <tr>
+                    <td>Magazzini Alimentari Riuniti</td>
+                </tr>
+            </table>
+
+        </div>
+      
+
+
+
+{% endblock content %}

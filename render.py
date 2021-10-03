@@ -28,6 +28,8 @@ def render():
     process("index.html")
 
     process("parties.html", context={"parties": parties})
+    process("home.html")
+    process("search.html")
     process("res/css/base.css", template_path="css/base.css", )
 
 if __name__ == "__main__":
